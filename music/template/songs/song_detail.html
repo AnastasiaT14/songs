@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ song.title }}</title>
+</head>
+<body>
+    <h1>{{ song.title }}</h1>
+    <p>Writer: {{ song.song_writer }}</p>
+    <p>Genre: {{ song.genre }}</p>
+    <p>Release Date: {{ song.release_date }}</p>
+    <a href="{% url 'song_list' %}">Back to List</a>
+</body>
+</html>

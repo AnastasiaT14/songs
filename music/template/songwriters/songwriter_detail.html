@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ songwriter.name }} {{ songwriter.surname }}</title>
+</head>
+<body>
+    <h1>{{ songwriter.name }} {{ songwriter.surname }}</h1>
+    <p>Picture: <img src="{{ songwriter.picture.url }}" alt="{{ songwriter.name }} {{ songwriter.surname }}"></p>
+    <p>Bio: {{ songwriter.bio }}</p>
+    <a href="{% url 'songwriter_list' %}">Back to List</a>
+</body>
+</html>
